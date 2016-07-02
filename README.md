@@ -5,8 +5,7 @@ Joshua Brown 2016
 This is a Python script that runs according to the rules of Conway's Game of Life.
 
 To display the iterating generations, I am using a [MineCraft world](https://minecraft.net).
-
-![Alt text](https://goo.gl/photos/xa9B3oqkVfDJRxU59 "Game o' Life")
+![Conway](http://octodex.github.com/images/minion.png)
 
 The world grid is in a [Minecraft Bukkit Server](http://wiki.bukkit.org).  But later I'd like to switch to [Forge](http://files.minecraftforge.net), as that allows the use of the [HTC Vive](https://www.htcvive.com) for a VR experience with Python.
 
