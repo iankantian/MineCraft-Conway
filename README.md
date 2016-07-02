@@ -15,5 +15,10 @@ A book that is a decent beginner's programming guide, that dives right into scri
 
 Be aware for using this script that you have to edit your initial coordinates 'xo, yo, zo' to a good lower left corner of your own Minecraft world.  Also, the test for running the loop is whether a block is at a certain x,y,z.  I chose an arbitrary point for a sticky piston to remove a block from that location to stop the loop from running.
 
-TODO
+TODO  
+Add some modules to populate game with a game grid, clearig the grid, and little pre-made modules like Gosper Glider that can be loaded up.
+
+Logic for the block setting code got x and z swapped.  My hack was to swap x and z in the setBlocks arguments.  Not ideal.
+
+See if it's more efficient to set the next generation of the game grid all at once.  I'm not so sure it is, as the API is pretty efficient as-is.
 
