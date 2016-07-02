@@ -2,7 +2,15 @@
 =======
 Joshua Brown 2016
 
-This is a Python script that runs according to the rules of Conway's Game of Life.
+This is a Python script that runs according to the rules of [Conway's Game of Life](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life), the most famous example of [Cellular Automaton](https://en.wikipedia.org/wiki/Cellular_automaton).
+What is remarkable about Conway's Game is that complex emergent behaviors arise from profoundly simple rules:
+* the world is a 2d grid of cells that are occupied, 'alive' or empty, 'dead'
+* if an empty cell has exactly 3 neighbors, that cell becomes 'alive' as if by reproduction
+* if an occupied cell has 2 or 3 neighbors it survives to the next generation
+* if an occupied cell has only 1 neighbor it dies as if by starvation or lonliness
+* if an occupied cell has 4 or more neighbors it dies as if by overcrowding or suffocation
+
+Recreational mathmeticians usually experience the game from an omnipotent and disconnected top-down approach.  With this you can walk amongst the life, interacting at 'eye-level' with the simulation.
 
 To display the iterating generations, I am using a [MineCraft world](https://minecraft.net).
 ![Conway](https://lh3.googleusercontent.com/PUhROTcC6Ci0qlBQXaNoDvbhmAYO51kvEBxkaxF45CTzNzng8Y1O8HscCD9rve3WOqITEXR6rRyVq1k9ku8EuP4cOCs_bP8hY1FNE6hnLqYDy7v2i3kfQHm_gsPNjaKU2-xTHAJehE4SbxrIouWO_2I4PqA4X8xtKmsO0pTl-PB9vDd1aVtRE51DTaPG8yw16TT2TacAj8lGYd52G6AgbsP7MsgynDbk1e1mAO3oZd0ujn_LVqUhGh_pJs4yomOQUiTAlxxiCrlT_URzULBf1wjbfhvMAElX3nDTnxU8Cw0cEJKqwQ5yad8PExkAW6YUIpLbIy51IUjn8uoV1YL2KB_qpeZdVjHYAoYQnDT7u5rMf1KMeHvg6lmXFyUg4vSVRDNh-CY7p4Y6HQlBSudsykUVHr6QxdWYb-XqZ7L8ennK2mqXKhrPikv79Pg7E3grnRE5Q23mcf-3BXO70pRFj6Aj4cA2lSgfWFUTVW29r-E5ZS_c9h_5Fwe5aowUdoqdXTRWJAoOTPSJgy-LRzz1uwd6fhpPy7T5IQZlnEl49YuqWrgUK1JevkDQWk7L2sm2nUvFr3ZqFJkjnrvKNMZx5h-IWt2KNBM=w1822-h1140-no)
