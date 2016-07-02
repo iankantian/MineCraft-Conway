@@ -19,8 +19,13 @@ width = 50
 depth = 50
 
 # manually wrote a non square array to test logic below, it works just fine.
-#blocks = [0,0,0,0,41,41,41,41,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,]
+# here it's to run minecraft, without minecraft, this is my world:
+#blocks = [0] * 2500 # simulate 50 x 50 grid
 
+
+#newBlocks = [0] * 2500 # a place to put the results in!
+
+ticks = 0;
 while 1: # Infinite loop!!!!!!!5
     onSwitch = mc.getBlock(-94, 83, 78);
     if onSwitch: # if it's there, the code runs!
@@ -54,10 +59,15 @@ while 1: # Infinite loop!!!!!!!5
                     if(n == 3):
                         #somehow my z's and x's got switched around
                         mc.setBlock(xo + z, yo, zo + x, blockType)
+                        #newBlocks[z][x] = blockType
                         #print('happy birthday cell! at ' + str(x) + ', ' + str(yo) + ', ' + str(z))
                 elif n >= 4 or n < 2 :
                     # death by overcrowding or lonliness
                     mc.setBlock(xo + z,yo,zo + x, 0) #just air now!
+                    #newBlocks[z][x] = 0
                     #print( 'cell death at ' + str(x) + ', ' + str(yo) + ', ' + str(z) )
         #time.sleep(1)
-    time.sleep(1)
+        ticks += 1
+        #blocks = newBlocks
+        print(ticks)
+    #time.sleep(1)
