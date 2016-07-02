@@ -6,6 +6,8 @@ This is a Python script that runs according to the rules of Conway's Game of Lif
 
 To display the iterating generations, I am using a [MineCraft world](https://minecraft.net).
 
+![Alt text](https://goo.gl/photos/xa9B3oqkVfDJRxU59 "Game o' Life")
+
 The world grid is in a [Minecraft Bukkit Server](http://wiki.bukkit.org).  But later I'd like to switch to [Forge](http://files.minecraftforge.net), as that allows the use of the [HTC Vive](https://www.htcvive.com) for a VR experience with Python.
 
 The [RasberryJuice Plugin](http://dev.bukkit.org/bukkit-plugins/raspberryjuice/) runs on Bukkit, allowing you to import the api for Python script control.  Potentially for use with Forge 
